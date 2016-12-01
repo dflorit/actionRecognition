@@ -1,30 +1,50 @@
 from util import Util
+from featureExtractors import *
+from classifiers import *
 from numpy import *
-from functions import *
 import cv2
 
 class Assignment3:
 	
 	def __init__(self):
 		self.u = Util()
+		self.svn = SVMClassifier()
+		self.path = "ucf_sports_actions/ucf action"
+		
+		#list of all directory paths to get the videos
+		#list of the labels (number associated to each category)
+		self.videoPaths, self.videoLabels = self.u.getVideoPaths(self.path)
+		self.meanFlowFeatureVector = []
+		
+		for video in self.videoPaths:
+			v = FeatureExtractors(video)
+			features = v.meanFlowFeatureVector()
+			self.meanFlowFeatureVector.append(features)
 	
-	def problem1a(self):
-		p1 = "Images/p1/"
+		#shuffle the feature vector and the labels:
+		l = len(self.videoLabels)
+		index = [x for x in range(l)]
+		random.shuffle(index)
+		self.videoLabels = [self.videoLabels[x] for x in index]
+		self.meanFlowFeatureVector = [self.meanFlowFeatureVector[x] for x in index]
 		
-		#basketball image
-		img1_ini = p1 + "basketball1.png"
-		img1_end = p1 + "basketball2.png"
-		img1_output = p1 + "basketballOutput.png"
 		
-		Im1_1 = cv2.imread(img1_ini)
-		Im1_2 = cv2.imread(img1_end)
-		Image1_1 = cv2.cvtColor(Im1_1, cv2.COLOR_BGR2GRAY)
-		Image1_2 = cv2.cvtColor(Im1_2, cv2.COLOR_BGR2GRAY)
-		Image1RGB = self.u.readImgRGB(img1_ini)
-			
-		lk_img1 = LucasKanade(Image1_1, Image1_2, Image1RGB)
-		output1 = lk_img1.getSparseFlow()
-		output1.save(img1_output)
+		#self.printStuff()
+		
+	
+	def printStuff(self):
+		print "meanFlowFeatureVector:"
+		print self.meanFlowFeatureVector
+		print "\n"
+		print "video labels:"
+		print self.videoLabels
+		print "\n"
+		print len(self.videoLabels), len(self.meanFlowFeatureVector), len(self.videoPaths)
+		
+	
+	
+		
+		
 		
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 PA3 = Assignment3()

@@ -1,0 +1,249 @@
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  1
+Experiment 1 uses 'SVM' classifier with 'all' feature vector and all default parameters
+
+
+Feature vector used:  all
+Classifier used:  SVM
+Max number of features (corners) extracted from video:  100
+Relevant parameters: 
+	kernel used:  rbf
+
+
+
+
+
+ Parameters for classifier:
+{'kernel': 'rbf', 'C': 1.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.0210402659926 
+
+Metrics for :  Diving
+precision:  0.000999000999001
+sensitivity:  0.000142836737609
+specificity:  0.992647058824
+
+
+Metrics for :  Golf-Swing
+precision:  0.5
+sensitivity:  5.55524693073e-05
+specificity:  0.999992000064
+
+
+Metrics for :  Kicking
+precision:  0.000999000999001
+sensitivity:  4.9997500125e-05
+specificity:  0.991869918699
+
+
+Metrics for :  Lifting
+precision:  0.5
+sensitivity:  0.000166638893518
+specificity:  0.999992700783
+
+
+Metrics for :  Riding-Horse
+precision:  0.5
+sensitivity:  8.33263894675e-05
+specificity:  0.99999236647
+
+
+Metrics for :  Running
+precision:  0.000166638893518
+sensitivity:  7.69171602184e-05
+specificity:  0.953846153846
+
+
+Metrics for :  SkateBoarding
+precision:  0.5
+sensitivity:  8.33263894675e-05
+specificity:  0.99999236647
+
+
+Metrics for :  Swing-Bench
+precision:  5.88200694077e-05
+sensitivity:  4.9997500125e-05
+specificity:  0.861788617886
+
+
+Metrics for :  Swing-Side
+precision:  0.5
+sensitivity:  7.69171602184e-05
+specificity:  0.999992307751
+
+
+Metrics for :  Walking
+precision:  0.0254237288136
+sensitivity:  0.136363636364
+specificity:  0.0495867768595
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  2
+Experiment 2 uses 'SVM' classifier with 'mean' feature vector and all default parameters
+
+
+Feature vector used:  mean
+Classifier used:  SVM
+Max number of features (corners) extracted from video:  100
+Relevant parameters: 
+	kernel used:  rbf
+
+
+
+
+
+ Parameters for classifier:
+{'kernel': 'rbf', 'C': 1.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.153875738611 
+
+Metrics for :  Diving
+precision:  0.000999000999001
+sensitivity:  0.000142836737609
+specificity:  0.992647058824
+
+
+Metrics for :  Golf-Swing
+precision:  0.388888888889
+sensitivity:  0.388888888889
+specificity:  0.912
+
+
+Metrics for :  Kicking
+precision:  0.0689655172414
+sensitivity:  0.1
+specificity:  0.780487804878
+
+
+Metrics for :  Lifting
+precision:  0.000999000999001
+sensitivity:  0.000166638893518
+specificity:  0.992700729927
+
+
+Metrics for :  Riding-Horse
+precision:  0.000333222259247
+sensitivity:  8.33263894675e-05
+specificity:  0.977099236641
+
+
+Metrics for :  Running
+precision:  0.000249937515621
+sensitivity:  7.69171602184e-05
+specificity:  0.969230769231
+
+
+Metrics for :  SkateBoarding
+precision:  0.000166638893518
+sensitivity:  8.33263894675e-05
+specificity:  0.954198473282
+
+
+Metrics for :  Swing-Bench
+precision:  0.0888888888889
+sensitivity:  0.2
+specificity:  0.666666666667
+
+
+Metrics for :  Swing-Side
+precision:  0.166666666667
+sensitivity:  0.0769230769231
+specificity:  0.961538461538
+
+
+Metrics for :  Walking
+precision:  0.266666666667
+sensitivity:  0.363636363636
+specificity:  0.818181818182
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  3
+Experiment 3 uses 'SVM' classifier with 'minMax' feature vector and all default parameters
+
+
+Feature vector used:  minMax
+Classifier used:  SVM
+Max number of features (corners) extracted from video:  100
+Relevant parameters: 
+	kernel used:  rbf
+
+
+
+
+
+ Parameters for classifier:
+{'kernel': 'rbf', 'C': 1.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.035018652607 
+
+Metrics for :  Diving
+precision:  0.000999000999001
+sensitivity:  0.000142836737609
+specificity:  0.992647058824
+
+
+Metrics for :  Golf-Swing
+precision:  0.000166638893518
+sensitivity:  5.55524693073e-05
+specificity:  0.952
+
+
+Metrics for :  Kicking
+precision:  0.03125
+sensitivity:  0.05
+specificity:  0.747967479675
+
+
+Metrics for :  Lifting
+precision:  0.5
+sensitivity:  0.000166638893518
+specificity:  0.999992700783
+
+
+Metrics for :  Riding-Horse
+precision:  0.5
+sensitivity:  8.33263894675e-05
+specificity:  0.99999236647
+
+
+Metrics for :  Running
+precision:  0.000499750124938
+sensitivity:  7.69171602184e-05
+specificity:  0.984615384615
+
+
+Metrics for :  SkateBoarding
+precision:  0.5
+sensitivity:  8.33263894675e-05
+specificity:  0.99999236647
+
+
+Metrics for :  Swing-Bench
+precision:  1.29868443267e-05
+sensitivity:  4.9997500125e-05
+specificity:  0.373983739837
+
+
+Metrics for :  Swing-Side
+precision:  0.000499750124938
+sensitivity:  7.69171602184e-05
+specificity:  0.984615384615
+
+
+Metrics for :  Walking
+precision:  0.173913043478
+sensitivity:  0.181818181818
+specificity:  0.842975206612
+
+

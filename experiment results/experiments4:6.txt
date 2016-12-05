@@ -1,0 +1,243 @@
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  4
+Experiment 4 uses 'LinearSVM' classifier with 'all' feature vector and all default parameters
+
+
+Feature vector used:  all
+Classifier used:  LinearSVM
+Max number of features (corners) extracted from video:  100
+
+
+
+
+
+ Parameters for classifier:
+{'loss': 'squared_hinge', 'C': 1.0, 'verbose': 0, 'intercept_scaling': 1, 'fit_intercept': True, 'max_iter': 1000, 'penalty': 'l2', 'multi_class': 'ovr', 'random_state': None, 'dual': True, 'tol': 0.0001, 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.160856765243 
+
+Metrics for :  Diving
+precision:  0.000249937515621
+sensitivity:  0.000142836737609
+specificity:  0.970588235294
+
+
+Metrics for :  Golf-Swing
+precision:  0.315789473684
+sensitivity:  0.333333333333
+specificity:  0.896
+
+
+Metrics for :  Kicking
+precision:  0.115384615385
+sensitivity:  0.15
+specificity:  0.813008130081
+
+
+Metrics for :  Lifting
+precision:  0.125
+sensitivity:  0.166666666667
+specificity:  0.948905109489
+
+
+Metrics for :  Riding-Horse
+precision:  8.33263894675e-05
+sensitivity:  8.33263894675e-05
+specificity:  0.908396946565
+
+
+Metrics for :  Running
+precision:  0.08
+sensitivity:  0.153846153846
+specificity:  0.823076923077
+
+
+Metrics for :  SkateBoarding
+precision:  5.88200694077e-05
+sensitivity:  8.33263894675e-05
+specificity:  0.870229007634
+
+
+Metrics for :  Swing-Bench
+precision:  0.4
+sensitivity:  0.1
+specificity:  0.975609756098
+
+
+Metrics for :  Swing-Side
+precision:  0.333333333333
+sensitivity:  0.384615384615
+specificity:  0.923076923077
+
+
+Metrics for :  Walking
+precision:  0.333333333333
+sensitivity:  0.181818181818
+specificity:  0.933884297521
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  5
+Experiment 5 uses 'LinearSVM' classifier with 'mean' feature vector and all default parameters
+
+
+Feature vector used:  mean
+Classifier used:  LinearSVM
+Max number of features (corners) extracted from video:  100
+
+
+
+
+
+ Parameters for classifier:
+{'loss': 'squared_hinge', 'C': 1.0, 'verbose': 0, 'intercept_scaling': 1, 'fit_intercept': True, 'max_iter': 1000, 'penalty': 'l2', 'multi_class': 'ovr', 'random_state': None, 'dual': True, 'tol': 0.0001, 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.12588635124 
+
+Metrics for :  Diving
+precision:  0.000124984376953
+sensitivity:  0.000142836737609
+specificity:  0.941176470588
+
+
+Metrics for :  Golf-Swing
+precision:  0.142857142857
+sensitivity:  0.277777777778
+specificity:  0.76
+
+
+Metrics for :  Kicking
+precision:  0.230769230769
+sensitivity:  0.15
+specificity:  0.918699186992
+
+
+Metrics for :  Lifting
+precision:  0.000333222259247
+sensitivity:  0.000166638893518
+specificity:  0.978102189781
+
+
+Metrics for :  Riding-Horse
+precision:  0.222222222222
+sensitivity:  0.166666666667
+specificity:  0.946564885496
+
+
+Metrics for :  Running
+precision:  0.0555555555556
+sensitivity:  0.0769230769231
+specificity:  0.869230769231
+
+
+Metrics for :  SkateBoarding
+precision:  0.333333333333
+sensitivity:  0.166666666667
+specificity:  0.969465648855
+
+
+Metrics for :  Swing-Bench
+precision:  0.0833333333333
+sensitivity:  0.05
+specificity:  0.910569105691
+
+
+Metrics for :  Swing-Side
+precision:  0.2
+sensitivity:  0.0769230769231
+specificity:  0.969230769231
+
+
+Metrics for :  Walking
+precision:  0.0882352941176
+sensitivity:  0.136363636364
+specificity:  0.743801652893
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  6
+Experiment 6 uses 'LinearSVM' classifier with 'minMax' feature vector and all default parameters
+
+
+Feature vector used:  minMax
+Classifier used:  LinearSVM
+Max number of features (corners) extracted from video:  100
+
+
+
+
+
+ Parameters for classifier:
+{'loss': 'squared_hinge', 'C': 1.0, 'verbose': 0, 'intercept_scaling': 1, 'fit_intercept': True, 'max_iter': 1000, 'penalty': 'l2', 'multi_class': 'ovr', 'random_state': None, 'dual': True, 'tol': 0.0001, 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.188828206401 
+
+Metrics for :  Diving
+precision:  0.000199960007998
+sensitivity:  0.000142836737609
+specificity:  0.963235294118
+
+
+Metrics for :  Golf-Swing
+precision:  0.230769230769
+sensitivity:  0.333333333333
+specificity:  0.84
+
+
+Metrics for :  Kicking
+precision:  0.235294117647
+sensitivity:  0.2
+specificity:  0.894308943089
+
+
+Metrics for :  Lifting
+precision:  0.000249937515621
+sensitivity:  0.000166638893518
+specificity:  0.970802919708
+
+
+Metrics for :  Riding-Horse
+precision:  0.142857142857
+sensitivity:  0.0833333333333
+specificity:  0.954198473282
+
+
+Metrics for :  Running
+precision:  0.166666666667
+sensitivity:  0.153846153846
+specificity:  0.923076923077
+
+
+Metrics for :  SkateBoarding
+precision:  0.333333333333
+sensitivity:  0.166666666667
+specificity:  0.969465648855
+
+
+Metrics for :  Swing-Bench
+precision:  0.25
+sensitivity:  0.2
+specificity:  0.90243902439
+
+
+Metrics for :  Swing-Side
+precision:  5.88200694077e-05
+sensitivity:  7.69171602184e-05
+specificity:  0.869230769231
+
+
+Metrics for :  Walking
+precision:  0.242424242424
+sensitivity:  0.363636363636
+specificity:  0.793388429752
+
+

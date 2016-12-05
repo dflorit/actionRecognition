@@ -1,0 +1,239 @@
+
+ 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  10
+Experiment 10 uses SVM classifier with 'all' feature vector with 'linear' kernell and all other default parameters
+
+
+Feature vector used:  all
+Classifier used:  SVM
+Max number of features (corners) extracted from video:  100
+Relevant parameters: 
+	kernel used:  linear
+
+
+ Parameters for classifier:
+{'kernel': 'linear', 'C': 1.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.258751625851 
+
+Metrics for :  Diving
+precision:  0.000142836737609
+sensitivity:  0.000142836737609
+specificity:  0.948529411765
+
+
+Metrics for :  Golf-Swing
+precision:  0.4
+sensitivity:  0.444444444444
+specificity:  0.904
+
+
+Metrics for :  Kicking
+precision:  0.210526315789
+sensitivity:  0.2
+specificity:  0.878048780488
+
+
+Metrics for :  Lifting
+precision:  0.222222222222
+sensitivity:  0.333333333333
+specificity:  0.948905109489
+
+
+Metrics for :  Riding-Horse
+precision:  0.111111111111
+sensitivity:  0.25
+specificity:  0.81679389313
+
+
+Metrics for :  Running
+precision:  9.99900009999e-05
+sensitivity:  7.69171602184e-05
+specificity:  0.923076923077
+
+
+Metrics for :  SkateBoarding
+precision:  0.142857142857
+sensitivity:  0.166666666667
+specificity:  0.908396946565
+
+
+Metrics for :  Swing-Bench
+precision:  0.285714285714
+sensitivity:  0.1
+specificity:  0.959349593496
+
+
+Metrics for :  Swing-Side
+precision:  0.47619047619
+sensitivity:  0.769230769231
+specificity:  0.915384615385
+
+
+Metrics for :  Walking
+precision:  0.666666666667
+sensitivity:  0.272727272727
+specificity:  0.97520661157
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  11
+Experiment 11 uses SVM classifier with 'all' feature vector with 'poly' kernell of defaul degree 3 		and all other default parameters
+
+
+Feature vector used:  all
+Classifier used:  SVM
+Max number of features (corners) extracted from video:  100
+Relevant parameters: 
+	kernel used:  poly
+	degree used:  3
+
+
+ Parameters for classifier:
+{'kernel': 'poly', 'C': 1.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+
+
+Printing Metrics
+The accuracy for this test is:  0.188833878773 
+
+Metrics for :  Diving
+precision:  0.000999000999001
+sensitivity:  0.000142836737609
+specificity:  0.992647058824
+
+
+Metrics for :  Golf-Swing
+precision:  0.36
+sensitivity:  0.5
+specificity:  0.872
+
+
+Metrics for :  Kicking
+precision:  0.000249937515621
+sensitivity:  4.9997500125e-05
+specificity:  0.967479674797
+
+
+Metrics for :  Lifting
+precision:  0.0769230769231
+sensitivity:  0.166666666667
+specificity:  0.912408759124
+
+
+Metrics for :  Riding-Horse
+precision:  0.0857142857143
+sensitivity:  0.25
+specificity:  0.75572519084
+
+
+Metrics for :  Running
+precision:  0.000166638893518
+sensitivity:  7.69171602184e-05
+specificity:  0.953846153846
+
+
+Metrics for :  SkateBoarding
+precision:  0.000499750124938
+sensitivity:  8.33263894675e-05
+specificity:  0.984732824427
+
+
+Metrics for :  Swing-Bench
+precision:  0.2
+sensitivity:  0.05
+specificity:  0.967479674797
+
+
+Metrics for :  Swing-Side
+precision:  0.366666666667
+sensitivity:  0.846153846154
+specificity:  0.853846153846
+
+
+Metrics for :  Walking
+precision:  0.0909090909091
+sensitivity:  0.0909090909091
+specificity:  0.834710743802
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Experiment  12
+Experiment 12 uses 'SVM' classifier with 'all' feature vector with 'poly' kernell of degree 6 		and all other default parameters
+
+
+Feature vector used:  all
+Classifier used:  SVM
+Max number of features (corners) extracted from video:  100
+Relevant parameters: 
+	kernel used:  poly
+	degree used:  6
+
+
+Extracting features from video  0
+[FExtracting features from video  1
+[FExtracting features from video  2
+[FExtracting features from video  3
+[FExtracting features from video  4
+[FExtracting features from video  5
+[FExtracting features from video  6
+[FExtracting features from video  7
+[FExtracting features from video  8
+[FExtracting features from video  9
+[FExtracting features from video  10
+[FExtracting features from video  11
+[FExtracting features from video  12
+[FExtracting features from video  13
+[FExtracting features from video  14
+[FExtracting features from video  15
+[FExtracting features from video  16
+[FExtracting features from video  17
+[FExtracting features from video  18
+[FExtracting features from video  19
+[FExtracting features from video  20
+[FExtracting features from video  21
+[FExtracting features from video  22
+[FExtracting features from video  23
+[FExtracting features from video  24
+[FExtracting features from video  25
+[FExtracting features from video  26
+[FExtracting features from video  27
+[FExtracting features from video  28
+[FExtracting features from video  29
+[FExtracting features from video  30
+[FExtracting features from video  31
+[FExtracting features from video  32
+[FExtracting features from video  33
+[FExtracting features from video  34
+[FExtracting features from video  35
+[FExtracting features from video  36
+[FExtracting features from video  37
+[FExtracting features from video  38
+[FExtracting features from video  39
+[FExtracting features from video  40
+[FExtracting features from video  41
+[FExtracting features from video  42
+[FExtracting features from video  43
+[FExtracting features from video  44
+[FExtracting features from video  45
+[FExtracting features from video  46
+[FExtracting features from video  47
+[FExtracting features from video  48
+[FExtracting features from video  49
+[FExtracting features from video  50
+[FExtracting features from video  51
+[FExtracting features from video  52
+[FExtracting features from video  53
+[FExtracting features from video  54
+[FExtracting features from video  55
+[FExtracting features from video  56
+[FExtracting features from video  57
+[FExtracting features from video  58
+[FExtracting features from video  59
+[FExtracting features from video  60
+[FExtracting features from video  61
+[FExtra

@@ -14,10 +14,15 @@ class FeatureExtractors:
 		self.u = Util()
 		self.path = videopath
 		self.cap = cv2.VideoCapture(self.path)
-	
-	def commomFlowFeatureVector(self):
+		
+	'''	
+	This function serves as a common resource for all flow feature vector functions. It calculates the optical flow for the video given a maximum
+	number of features to track. It then calculates the distance between the initial location of the feature (corner) and the ending location. 
+	This distance is considered the magnitude of the optical flow. The angle (direction) is also calculated
+	'''
+	def commomFlowFeatureVector(self, maxFeat):
 		# params for ShiTomasi corner detection	
-		feature_params = dict( maxCorners = 100, qualityLevel = 0.3, minDistance = 7, blockSize = 7 )
+		feature_params = dict( maxCorners = maxFeat, qualityLevel = 0.3, minDistance = 7, blockSize = 7 )
 
 		# Parameters for lucas kanade optical flow
 		lk_params = dict( winSize  = (15,15), maxLevel = 2, criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03))
@@ -65,20 +70,59 @@ class FeatureExtractors:
 		cv2.destroyAllWindows()
 		self.cap.release()
 		return distanceFeatures, angleFeatures
-			
-	def meanFlowFeatureVector(self):
-		distanceFeatures, angleFeatures = self.commomFlowFeatureVector()
+	
+	
+	'''
+	meanFlowFeatureVector finds the mean of the distances and the mean of the angles and returns a vector of size two with these two features
+	to represent the entire flow.
+	'''		
+	def meanFlowFeatureVector(self, maxFeat):
+		distanceFeatures, angleFeatures = self.commomFlowFeatureVector(maxFeat)
+		
 		meanDistance = sum(distanceFeatures)/(1.0*len(distanceFeatures))
 		meanAngles = sum(angleFeatures)/(1.0*len(angleFeatures))
+		
 		meanFlowFeatureVector = [meanDistance, meanAngles]
 		
 		return meanFlowFeatureVector
 	
-	def allFlowFeatureVector(self):
-		distanceFeatures, angleFeatures = self.commomFlowFeatureVector()
+	'''
+	allFlowFeatureVector returns all the distances and angles.
+	note that since the goodfeaturestoTrack function does not always return the same number of features (corners), this function fills 
+	each vector with zeros so that they all have the same size of 2*maxFeat. |distances| = maxFeat and |angles| = maxFeat
+	'''
+	
+	def allFlowFeatureVector(self, maxFeat):
+		distanceFeatures, angleFeatures = self.commomFlowFeatureVector(maxFeat)
+		
+		#filling the array so that all of them have the same length (maxFeat)
+		l = maxFeat -len(distanceFeatures)
+		distanceFeatures = distanceFeatures + [0.00000000e+00]*l
+		angleFeatures = angleFeatures + [0.00000000e+00]*l
+			
 		allFlowFeatureVector = distanceFeatures + angleFeatures
-		
-		print len(allFlowFeatureVector)
-		
 		return allFlowFeatureVector
+	
+	
+	'''
+	minMaxFlowFeatureVector calculates the average distance, average angle, minimum distance, minimum angle, maximum distance, and maximum angle
+	It returns a vector of size 6 to describe the overall flow.
+	'''
+	def minMaxFlowFeatureVector(self, maxFeat):
+		distanceFeatures, angleFeatures = self.commomFlowFeatureVector(maxFeat)
+		
+		meanDistance = sum(distanceFeatures)/(1.0*len(distanceFeatures))
+		meanAngles = sum(angleFeatures)/(1.0*len(angleFeatures))
+		
+		maxDistance = max(distanceFeatures)
+		minDistance = min(distanceFeatures)
+		
+		maxAngle = max(angleFeatures)
+		minAngle = min(angleFeatures)
+
+		
+		minMaxFlowFeatureVector = [meanDistance, meanAngles, maxDistance, minDistance, maxAngle, minAngle]
+		return minMaxFlowFeatureVector
+	
+		
 		
